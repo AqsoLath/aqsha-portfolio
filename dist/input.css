@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+	.inset-center {
+		left: 50%;
+  		transform: translatex(-50%);
+	}
+
+	.subjudul{
+		@apply text-5xl  font-fredoka text-center font-semibold tracking-wider;
+	}
+}
