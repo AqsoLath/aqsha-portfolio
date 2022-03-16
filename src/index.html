@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Aqsha Portofolio</title>
 	<link rel="stylesheet" type="text/css" href="output.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
-<body class="font-mulish pb-20">
+<body class="font-mulish pb-20 ">
 	<div class="nav bg-biru4 py-1 fixed top-0 right-0 left-0 z-30 transition-all duration-500" id="navbar">
         <div class="container mx-auto flex justify-between items-center flex-col lg:flex-row">
             <div class="flex justify-between p-2 items-center w-full">
@@ -22,40 +24,46 @@
             <div class="w-full hidden lg:block" id="nav-links">
                 <div class="flex flex-col lg:flex-row py-2 border-t-2 border-t-ungu4 lg:border-t-0">
                     <a href="#" 
-                    	class="mx-3 text-inherit hover:text-biru2 transition font-semibold py-1">Home</a>
+                    	class="mx-3 text-inherit hover:text-slate-500 transition font-semibold py-1">Home</a>
                     <a href="#about"
-                        class="mx-3 text-inherit hover:text-biru2 transition font-semibold py-1">About</a>
+                        class="mx-3 text-inherit hover:text-slate-500 transition font-semibold py-1">About</a>
                     <a href="#skills"
-                        class="mx-3 text-inherit hover:text-biru2 transition font-semibold py-1">Skills</a>
+                        class="mx-3 text-inherit hover:text-slate-500 transition font-semibold py-1">Skills</a>
                     <a href="#projects"
-                        class="mx-3 text-inherit hover:text-biru2 transition font-semibold py-1">Projects</a>
+                        class="mx-3 text-inherit hover:text-slate-500 transition font-semibold py-1">Projects</a>
                     <a href="#contact"
-                        class="mx-3 text-inherit hover:text-biru2 transition font-semibold py-1">Contact</a>
+                        class="mx-3 text-inherit hover:text-slate-500 transition font-semibold py-1">Contact</a>
                 </div>
             </div>
         </div>
     </div>
 
-	<div class="jumbotron py-12 pt-20 bg-gradient-to-b from-biru4 to-putih" id="home">
-		<div class="container mx-auto px-2 flex flex-col lg:flex-row items-center">
+	<div class="jumbotron py-12 pt-20 bg-gradient-to-b from-biru4 to-putih mb-20" id="home">
+		<div class="container mx-auto px-2 flex  flex-col-reverse md:flex-row items-center">
 			<div class="flex-1 ">
-				<h1 class="text-5xl text-hitam font-fredoka font-[500] text-hitam my-auto mb-4">Hi! I'm <br> Aqsha Lathif Imron</h1>
-				<p class="text-sm leading-tight">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<h1 class="text-5xl text-hitam text-center md:text-left font-fredoka font-[500] text-hitam my-auto mb-4">Hi! I'm <br> Aqsha Lathif Imron</h1>
+				<p class="text-sm leading-tight mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+				<a href="image/aqsha.jpeg" class=" bg-gradient-to-br from-biru2 to-biru3 text-putih py-1 px-4 rounded hover:from-biru1 hover:to-biru2 transition-all"><i class="fas fa-download mr-2 "></i>Download CV </a>
+				<div class="flex mt-4 md:justify-end text-3xl items-end text-hitam">
+					<a href="https://instagram.com/so.aqsho" target="_blank"><i class="fab fa-instagram mx-1"></i></a>
+					<a href="https://github.com/AxoLath" target="_blank"><i class="fab fa-github mx-1"></i></a>
+				</div>
 			</div>
-			<div class="flex-1 ">
+			<div class="flex-1 mb-4">
 				<div class="mx-auto relative ">
-					<div class="absolute z-10 w-48 h-48 left-1/2 bg-gradient-to-bl from-hitam to-biru1 rounded-full"></div>
-					<div class=" rounded-full w-80 h-80 absolute inset-center bottom-0 z-10 bg-gradient-to-b from-biru2/75  to-biru3/25 shadow shadow-biru3"></div>
-					<img src="image/foto-aqsha-remove.png" class="relative w-80  mx-auto z-20 rounded-b-full ">	
+					<div class="absolute z-10 w-28 h-28 md:w-48 md:h-48 left-1/2 bg-gradient-to-bl from-hitam to-biru1 rounded-full"></div>
+					<div class=" rounded-full w-48 h-48 md:w-80 md:h-80 absolute inset-center bottom-0 z-10 bg-gradient-to-b from-biru2/75  to-biru3/25 shadow shadow-biru3"></div>
+					<img src="image/foto-aqsha-remove.png" class="relative w-48 md:w-80  mx-auto z-20 rounded-b-full ">	
 				</div>
 			</div>
 		</div>
 	</div>
 
 <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="-mt-32"><path fill="#007ea7" fill-opacity="1" d="M0,192L120,181.3C240,171,480,149,720,170.7C960,192,1200,256,1320,288L1440,320L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
-	<div id="about" class="bg-gradient-to-b from-biru2 to-biru3">
-		<div id="tanda-about" class="absolute -mt-32"></div>
+	<div class="bg-gradient-to-b from-biru2 to-biru3">
+		<div id="about" class="absolute -mt-32"></div>
+		<div id="tanda-about" class="absolute -mt-36"></div>
 
 		<div class="container mx-auto text-putih">
 			<h2 class="subjudul text-putih mb-4">About Me</h2>
@@ -85,6 +93,7 @@
 
 
 	<div class="bg-gradient-to-b from-biru1 to-biru2 mx-auto py-8 px-2">
+		<div id="skills" class="absolute -mt-20"></div>
 		<div id="tanda-skills" class="absolute -mt-24"></div>
 		<h2 class="subjudul text-putih">My Skills</h2>
 		<div class="container mx-auto mt-4">
@@ -120,31 +129,32 @@
 		</div>
 	</div>
 
-	<div class="mt-8" id="projects">
+	<div class="mt-8" >
+		<div class="absolute -mt-20" id="projects"></div>
 		<h2 class="subjudul text-hitam mb-4">My Projects</h2>
-		<div class="grid grid-cols-2">
-			<div class="flex items-center bg-biru4 w-auto h-80 relative group overflow-hidden cursor-pointer" onclick="window.open('https://fathitourtravel.com', '_blank')" target="_blank" rel="noopener noreferrer" >
+		<div class="grid grid-cols-1 md:grid-cols-2">
+			<div class="flex items-center bg-biru4 w-auto h-64 md:h-80 relative group overflow-hidden cursor-pointer" onclick="window.open('https://fathitourtravel.com', '_blank')" target="_blank" rel="noopener noreferrer" >
 				<div class="w-full h-full absolute z-10 bg-[url('image/fathi.png')] bg-cover bg-top group-hover:scale-110 transition-all duration-300"></div>
 				<div class="absolute z-20 bottom-0 px-2 pt-4 bg-gradient-to-t from-putih via-putih to-transparent w-full " >
 					<h5>Company Profile & E-Commerce</h5>
 					<h4 class="text-xl text-hitam font-[600]">Fathi Tour Travel</h4>
 				</div>
 			</div>
-			<div class="flex items-center bg-biru4 w-auto h-80 relative group overflow-hidden cursor-pointer" onclick="window.open('https://necessite-wear.herokuapp.com', '_blank')" target="_blank" rel="noopener noreferrer" >
+			<div class="flex items-center bg-biru4 w-auto h-64 md:h-80 relative group overflow-hidden cursor-pointer" onclick="window.open('https://necessite-wear.herokuapp.com', '_blank')" target="_blank" rel="noopener noreferrer" >
 				<div class="w-full h-full absolute z-10 bg-[url('image/wear.png')] bg-cover bg-top group-hover:scale-110 transition-all duration-300"></div>
 				<div class="absolute z-20 bottom-0 px-2 pt-4 bg-gradient-to-t from-putih via-putih to-transparent w-full" >
 					<h5>E-commerce</h5>
 					<h4 class="text-xl text-hitam font-[600]">Necessite Wear</h4>
 				</div>
 			</div>
-			<div class="flex items-center bg-biru4 w-auto h-80 relative group overflow-hidden cursor-pointer" onclick="window.open('https://www.rqbaiturrahmanalasjad.com/', '_blank')" target="_blank" rel="noopener noreferrer" >
+			<div class="flex items-center bg-biru4 w-auto h-64 md:h-80 relative group overflow-hidden cursor-pointer" onclick="window.open('https://www.rqbaiturrahmanalasjad.com/', '_blank')" target="_blank" rel="noopener noreferrer" >
 				<div class="w-full h-full absolute z-10 bg-[url('image/rtba.png')] bg-cover bg-top group-hover:scale-110 transition-all duration-300"></div>
 				<div class="absolute z-20 bottom-0 px-2 pt-4 bg-gradient-to-t from-putih via-putih to-transparent w-full" >
 					<h5>Company Profile</h5>
 					<h4 class="text-xl text-hitam font-[600]">RQ Baiturrahman Al Asjad</h4>
 				</div>
 			</div>
-			<div class="flex items-center bg-biru4 w-auto h-80 relative group overflow-hidden cursor-pointer" onclick="window.open('https://smk3-peduli-covid.herokuapp.com', '_blank')" target="_blank" rel="noopener noreferrer" >
+			<div class="flex items-center bg-biru4 w-auto h-64 md:h-80 relative group overflow-hidden cursor-pointer" onclick="window.open('https://smk3-peduli-covid.herokuapp.com', '_blank')" target="_blank" rel="noopener noreferrer" >
 				<div class="w-full h-full absolute z-10 bg-[url('image/covid.png')] bg-cover bg-top group-hover:scale-110 transition-all duration-300"></div>
 				<div class="absolute z-20 bottom-0 px-2 pt-4 bg-gradient-to-t from-putih via-putih to-transparent w-full" >
 					<h5>Dynamic Website & Blog</h5>
@@ -177,6 +187,15 @@
 		  }
 		  });
 	</script>
+	<script>
+        const hamburger = document.querySelector('#hamburger');
+        const navLinks = document.querySelector("#nav-links");
+
+        hamburger.addEventListener('click', function () {
+            navLinks.classList.toggle('hidden');
+        })
+    </script>
+
 
 </body>
 </html>
