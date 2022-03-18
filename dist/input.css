@@ -12,6 +12,6 @@
 	}
 
 	.subjudul{
-		@apply text-5xl  font-fredoka text-center font-semibold tracking-wider;
+		@apply md:text-5xl text-4xl  font-fredoka text-center font-semibold tracking-wider;
 	}
 }
