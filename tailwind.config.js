@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -12,7 +13,9 @@ module.exports = {
       },
       fontFamily:{
         fredoka: "'fredoka', sans-serif",
-        mulish: "'mulish', sans-serif"
+        mulish: "'mulish', sans-serif",
+        sriracha: "'sriracha', 'fredoka', display",
+        fugaz: "'fugaz one', 'fredoka', display"
       }
     },
   },
