@@ -50,13 +50,17 @@ label .fa-sun {
 	background-color: rgb(82, 81, 83);
 }
 
+.hero-box:hover .aqsha-hero{
+	transform: translate3d(0, 0, 50px);
+}
+
     </style>
 </head>
-<body class="font-mulish pb-20 dark:bg-hitam" style="overflow-x: hidden;">
+<body class="font-mulish dark:bg-hitam" style="overflow-x: hidden;">
 	<div class="nav bg-biru4 dark:bg-biru1 text-hitam dark:text-putih py-1 fixed top-0 right-0 left-0 z-30 transition-all duration-500" id="navbar">
         <div class="container mx-auto flex justify-between items-center flex-col lg:flex-row">
             <div class="flex justify-between p-2 items-center w-full">
-                <div class="flex justify-around items-center w-full">
+                <div class="flex justify-between px-4 items-center w-full">
                     <h4 class="text-2xl text-inherit font-sriracha font-semibold tracking-wide">AqsoLath</h4>
                     <div class="night-mode-button">
 				      <input type="checkbox" class="checkbox" id="night-mode">
@@ -95,8 +99,7 @@ label .fa-sun {
 			<div class="flex-1 text-hitam dark:text-putih">
 				<h1 class="text-4xl md:text-5xl text-hitam text-center md:text-left font-fredoka font-[500] text-hitam dark:text-putih my-auto mb-4">Hi! I'm <br> Aqsha Lathif Imron</h1>
 				<p class="text-sm font-semibold md:text-base text-center md:text-left -mt-3  dark:text-putih">18 y.o | 16 January 2004 | Male | Single | Islam</p>
-				<p class="text-sm leading-tight my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+				<p class="text-sm leading-tight my-2">I am a programmer who focuses on web development, has knowledge of various programming languages, and has mastered several frameworks that are relevant today.</p>
 				<a href="image/aqsha.jpeg" class="w-64 block md:w-auto md:inline mx-auto text-center text-xl md:text-base bg-gradient-to-br from-biru2 to-biru3  text-putih py-1 px-4 rounded hover:from-biru1 hover:to-biru2 hover:text-slate-500 transition-all"><i class="fas fa-download mr-2 "></i>Download CV </a>
 				<div class="flex mt-4 md:justify-end text-3xl items-end">
 					<a href="https://instagram.com/so.aqsho" target="_blank " class="mx-1"><i class="fab fa-instagram mx-1"></i></a>
@@ -104,10 +107,10 @@ label .fa-sun {
 				</div>
 			</div>
 			<div class="flex-1 mb-4">
-				<div class="mx-auto relative ">
+				<div class="hero-box mx-auto relative " data-tilt style="transform-style: preserve-3d;">
 					<div class="absolute z-10 w-28 h-28 md:w-48 md:h-48 left-1/2 bg-gradient-to-bl from-hitam to-biru1 dark:from-biru2 dark:to-biru3 rounded-full"></div>
 					<div class=" rounded-full w-48 h-48 md:w-80 md:h-80 absolute inset-center bottom-0 z-10 bg-gradient-to-b from-biru2/75  to-biru3/25 dark:from-biru4/50 dark:to-biru2/75 shadow shadow-biru3"></div>
-					<img src="image/aqsha-hero.png" class="relative w-48 md:w-80  mx-auto z-20 rounded-b-full ">	
+					<img src="image/aqsha-hero.png" class="aqsha-hero relative w-48 md:w-80  mx-auto z-20 rounded-b-full transition-all">	
 				</div>
 			</div>
 		</div>
@@ -123,12 +126,8 @@ label .fa-sun {
 		<div class="container mx-auto text-putih" data-aos="fade-up" data-aos-offset="250">
 			<h2 class="subjudul text-putih mb-4">About Me</h2>
 			<div>
-				<p class="w-3/4 px-2 leading-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p class="sm:w-3/4 px-2 leading-5">I am a programmer who focuses on web development, especially the front end engineer of the javascript programming language. Have knowledge of various programming languages such as HTML, CSS, Javascript, PHP. And has mastered several relevant frameworks today such as ReactJS, Bootstrap, TailwindCSS and also Laravel. <br>
+				I am a student from <span class="italic">SMKN 3 Kota Bekasi</span> majoring in computer and network engineering, which will graduate in July 2022. </p>
 			</div>
 			<div class="mt-4 mx-auto">
 				<h3 class="text-center font-semibold tracking-wide text-2xl md:text-3xl mb-1 text-putih">Educational Background</h3>
@@ -211,37 +210,65 @@ label .fa-sun {
 	<div class="mt-8" >
 		<div class="absolute -mt-20" id="projects"></div>
 		<h2 class="subjudul text-hitam dark:text-putih mb-4" >My Projects</h2>
-		<div class="grid grid-cols-1 md:grid-cols-2 " data-aos="fade-up"  data-aos-offset="200">
+		<div class="grid grid-cols-1 md:grid-cols-2 text-hitam dark:text-putih" data-aos="fade-up"  data-aos-offset="200">
 			<div class="flex items-center bg-biru4 w-auto h-64 md:h-80 relative group overflow-hidden cursor-pointer" onclick="window.open('https://fathitourtravel.com', '_blank')" target="_blank" rel="noopener noreferrer" >
 				<div class="w-full h-full absolute z-10 bg-[url('image/fathi.png')] bg-cover bg-top group-hover:scale-110 transition-all duration-300"></div>
-				<div class="absolute z-20 bottom-0 px-2 pt-4 bg-gradient-to-t from-putih via-putih to-transparent w-full " >
+				<div class="absolute z-20 bottom-0 px-4 pt-4 pb-2 bg-gradient-to-t from-putih via-putih to-transparent dark:from-hitam dark:via-hitam w-full " >
 					<h5>Company Profile & E-Commerce</h5>
-					<h4 class="text-xl text-hitam font-[600]">Fathi Tour Travel</h4>
+					<h4 class="text-xl font-[600]">Fathi Tour Travel</h4>
 				</div>
 			</div>
 			<div class="flex items-center bg-biru4 w-auto h-64 md:h-80 relative group overflow-hidden cursor-pointer" onclick="window.open('https://necessite-wear.herokuapp.com', '_blank')" target="_blank" rel="noopener noreferrer" >
 				<div class="w-full h-full absolute z-10 bg-[url('image/wear.png')] bg-cover bg-top group-hover:scale-110 transition-all duration-300"></div>
-				<div class="absolute z-20 bottom-0 px-2 pt-4 bg-gradient-to-t from-putih via-putih to-transparent w-full" >
+				<div class="absolute z-20 bottom-0 px-4 pt-4 pb-2 bg-gradient-to-t from-putih via-putih to-transparent dark:from-hitam dark:via-hitam w-full" >
 					<h5>E-commerce</h5>
-					<h4 class="text-xl text-hitam font-[600]">Necessite Wear</h4>
+					<h4 class="text-xl font-[600]">Necessite Wear</h4>
 				</div>
 			</div>
 			<div class="flex items-center bg-biru4 w-auto h-64 md:h-80 relative group overflow-hidden cursor-pointer" onclick="window.open('https://www.rqbaiturrahmanalasjad.com/', '_blank')" target="_blank" rel="noopener noreferrer" >
 				<div class="w-full h-full absolute z-10 bg-[url('image/rtba.png')] bg-cover bg-top group-hover:scale-110 transition-all duration-300"></div>
-				<div class="absolute z-20 bottom-0 px-2 pt-4 bg-gradient-to-t from-putih via-putih to-transparent w-full" >
+				<div class="absolute z-20 bottom-0 px-4 pt-4 pb-2 bg-gradient-to-t from-putih via-putih to-transparent dark:from-hitam dark:via-hitam w-full" >
 					<h5>Company Profile</h5>
-					<h4 class="text-xl text-hitam font-[600]">RQ Baiturrahman Al Asjad</h4>
+					<h4 class="text-xl font-[600]">RQ Baiturrahman Al Asjad</h4>
 				</div>
 			</div>
 			<div class="flex items-center bg-biru4 w-auto h-64 md:h-80 relative group overflow-hidden cursor-pointer" onclick="window.open('https://smk3-peduli-covid.herokuapp.com', '_blank')" target="_blank" rel="noopener noreferrer" >
 				<div class="w-full h-full absolute z-10 bg-[url('image/covid.png')] bg-cover bg-top group-hover:scale-110 transition-all duration-300"></div>
-				<div class="absolute z-20 bottom-0 px-2 pt-4 bg-gradient-to-t from-putih via-putih to-transparent w-full" >
+				<div class="absolute z-20 bottom-0 px-4 pt-4 pb-2 bg-gradient-to-t from-putih via-putih to-transparent dark:from-hitam dark:via-hitam w-full" >
 					<h5>Dynamic Website & Blog</h5>
-					<h4 class="text-xl text-hitam font-[600]">SMK3 Peduli Covid</h4>
+					<h4 class="text-xl font-[600]">SMK3 Peduli Covid</h4>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="container mt-4 sm:mt-10 mx-auto text-hitam dark:text-putih">
+		<div class="absolute -mt-16" id="contact"></div>
+		<div class="flex flex-col md:flex-row justify-around items-center" data-aos="fade-up">
+			<div class="flex-initial justify-center py-4 px-2 ">
+				<h2 class="subjudul mb-3">Contact Me</h2>
+				<div class="border-4 w-full bg-gradient-to-b from-biru4/25 dark:from-slate-200/25 border-biru1 dark:border-biru2 rounded-full px-2 sm:px-8  py-2 mb-2">
+					<h3 class="text-xl font-bold"><i class="fab fa-whatsapp  font-normal"></i>  WhatsApp</h3>
+					<h4 class="text-3xl ml-6"> 0895-3672-42362</h4>
+				</div>
+				<div class="border-4 w-full  bg-gradient-to-b from-biru4/25 dark:from-slate-200/25 border-biru1 dark:border-biru2 rounded-full px-2 sm:px-8  py-2 mb-2">
+					<h3 class="text-xl font-bold"><i class="far fa-envelope" font-normal></i>  Email</h3>
+					<h4 class="text-2xl sm:text-3xl ml-6"> aqshalathif@gmail.com</h4>
+				</div>
+				 <div class="border-4 w-full  bg-gradient-to-b from-biru4/25 dark:from-slate-200/25 border-biru1 dark:border-biru2 rounded-full px-2 sm:px-8  py-2 mb-2 cursor-pointer hover:text-pink-400 transition" onclick="window.open('https://instagram.com/so.aqsho', '_blank')" target="_blank" rel="noopener noreferrer">
+					<h3 class="text-xl font-bold"><i class="fab fa-instagram font-normal"></i>  Instagram</h3>
+					<h4 class="text-3xl ml-6"> so.aqsho</h4>
+				</div>
+			</div>
+			<div class="flex-initial hidden md:block">
+				<img src="image/aqsha-paspoto.jpg" class="w-96 mx-auto border-4 border-biru1 dark:border-biru2 rounded-tr-md rounded-bl-md rounded-[80px]" data-tilt>
+			</div>
+		</div>
+	</div>
+
+	<footer class="mt-20 bg-hitam text-slate-400 py-4 text-center dark:border-t-2 dark:border-slate-400">
+		Copyright <i class="far fa-copyright"></i> 2022
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<script type="text/javascript">
@@ -255,8 +282,12 @@ label .fa-sun {
 
 	</script>
 	<script type="text/javascript">
-		const checkbox = document.querySelector('.checkbox');
 
+		const checkbox = document.querySelector('.checkbox');
+		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+		    checkbox.checked  = true;
+		    html.classList.add('dark');
+		}
 		checkbox.addEventListener('click', function() {
 			if (checkbox.checked){
 				html.classList.add('dark');
@@ -318,6 +349,8 @@ label .fa-sun {
 	<script>
 	  AOS.init();
 	</script>
+
+	<script type="text/javascript" src="vanilla-tilt.min.js"></script>
 
 
 </body>

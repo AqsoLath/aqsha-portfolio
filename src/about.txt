@@ -1,0 +1,2 @@
+Saya adalah seorang programmer yang fokus di bidang web development khususnya bagian front end engineer bahasa pemrograman javascript. Memiliki pengetahuan tentang berbagai macam bahasa pemrograman seperti HTML, CSS, Javascript, PHP. Serta telah menguasai beberapa framework yang relevan saat ini seperti ReactJS, Bootstrap, tailwindcss dan juga laravel.
+Saya merupakan siswa dari SMKN 3 Kota Bekasi yang mengambil jurusan Teknik komputer dan jaringan, yang akan lulus pada bulan juli 2022. 

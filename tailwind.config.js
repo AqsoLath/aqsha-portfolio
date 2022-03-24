@@ -14,8 +14,8 @@ module.exports = {
       fontFamily:{
         fredoka: "'fredoka', sans-serif",
         mulish: "'mulish', sans-serif",
-        sriracha: "'sriracha', 'fredoka', display",
-        fugaz: "'fugaz one', 'fredoka', display"
+        sriracha: "'sriracha', 'fredoka', cursive",
+        fugaz: "'fugaz one', 'fredoka', cursive"
       }
     },
   },
